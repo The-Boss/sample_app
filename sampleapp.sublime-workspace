@@ -3,16 +3,27 @@
 	{
 		"selected_items":
 		[
+			[
+				"user",
+				"user_with_same_email"
+			],
+			[
+				"tr",
+				"true"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/assets/stylesheets/custom.css.scss",
+			"contents": "require 'spec_helper'\n\ndescribe User do\n	before do\n		@user = User.new(name: \"Example User\", email: \"user@example.com\", password: \"foobar\", password_confirmation: \"foobar\")\n	end\n\n  subject { @user }\n\n  it { should respond_to(:name) }\n  it { should respond_to(:email) }\n  it { should respond_to(:password_digest)}\n  it { should respond_to(:password)}\n  it { should respond_to(:password_confirmation)}\n  \n\n  it { should be_valid }\n\n  describe \"when name is not present\" do\n  	before { @user.name = \" \" }\n    it { should_not be_valid }\n  end\n\n  describe \"when name is too long\" do\n  	before { @user.name = \"a\"*51 }\n    it { should_not be_valid }\n  end\n\n  describe \"when email is not present\" do\n  	before { @user.email = \" \" }\n    it { should_not be_valid }\n  end\n\n	describe \"when email format is invalid\" do\n    	it \"should be invalid\" do\n      		addresses = %w[user@foo,com user_at_foo.org example.user@foo.\n                     foo@bar_baz.com foo@bar+baz.com]\n      		addresses.each do |invalid_address|\n        		@user.email = invalid_address\n        		@user.should_not be_valid\n      		end      \n    	end\n  end\n\n  describe \"when email format is valid\" do\n   	it \"should be valid\" do\n   		addresses = %w[user@foo.COM A_US-ER@f.b.org frst.lst@foo.jp a+b@baz.cn]\n     		addresses.each do |valid_address|\n       		@user.email = valid_address\n       		@user.should be_valid\n     		end      \n   	end\n  end\n\n  describe \"when email address is already taken\" do\n    before do\n      user_with_same_email = @user.dup\n      user_with_same_email.email = @user.email.upcase\n      user_with_same_email.save\n    end\n    it { should_not be_valid }\n  end\n\n  describe \"when password is not present\" do\n    before { @user.password = @user.password_confirmation = \" \" }\n    it { should_not be_valid }\n  end\n\n  describe \"when password doesn't match confirmation\" do\n    before { @user.password_confirmation = \"mismatch\" }\n    it { should_not be_valid }\n  end\n\n  describe \"when password confirmation is nil\" do\n    before { @user.password_confirmation = nil }\n    it { should_not be_valid }\n  end\n\nend\n",
+			"file": "spec/models/user_spec.rb",
+			"file_size": 2082,
+			"file_write_time": 130183164611297953,
 			"settings":
 			{
-				"buffer_size": 1266,
-				"line_ending": "Windows"
+				"buffer_size": 2081,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -40,22 +51,31 @@
 	},
 	"file_history":
 	[
-		"/C/Users/George/Code/Ruby/sample_app/app/assets/stylesheets/application.css",
-		"/C/Users/George/Code/Ruby/sample_app/app/views/layouts/_footer.html.erb",
+		"/C/Users/George/Code/Ruby/sample_app/Gemfile",
+		"/C/Users/George/Code/Ruby/sample_app/db/migrate/20130713223246_add_index_to_users_email.rb",
+		"/C/Users/George/Code/Ruby/sample_app/app/models/user.rb",
+		"/C/Users/George/Code/Ruby/sample_app/spec/models/user_spec.rb",
+		"/C/Users/George/Code/Ruby/sample_app/db/migrate/20130711211709_create_users.rb",
+		"/C/Users/George/Code/Ruby/sample_app/app/views/static_pages/home.html.erb",
+		"/C/Users/George/Code/Ruby/sample_app/app/views/users/new.html.erb",
+		"/C/Users/George/Code/Ruby/sample_app/config/routes.rb",
+		"/C/Users/George/Code/Ruby/sample_app/spec/requests/user_pages_spec.rb",
+		"/C/Users/George/Code/Ruby/sample_app/app/controllers/users_controller.rb",
+		"/C/Users/George/Code/Ruby/sample_app/spec/support/utilities.rb",
+		"/C/Users/George/Code/Ruby/sample_app/spec/requests/static_pages_spec.rb",
 		"/C/Users/George/Code/Ruby/sample_app/app/views/layouts/_header.html.erb",
+		"/C/Users/George/Code/Ruby/sample_app/app/views/layouts/_footer.html.erb",
+		"/C/Users/George/Code/Ruby/sample_app/app/views/static_pages/contact.html.erb",
+		"/C/Users/George/Code/Ruby/sample_app/app/controllers/static_pages_controller.rb",
+		"/C/Users/George/Code/Ruby/sample_app/app/assets/stylesheets/custom.css.scss",
+		"/C/Users/George/Code/Ruby/sample_app/app/assets/stylesheets/application.css",
 		"/C/Users/George/Code/Ruby/sample_app/app/views/layouts/_shim.html.erb",
 		"/C/Users/George/Code/Ruby/sample_app/app/views/layouts/application.html.erb",
-		"/C/Users/George/Code/Ruby/sample_app/app/assets/stylesheets/custom.css.scss",
-		"/C/Users/George/Code/Ruby/sample_app/Gemfile",
-		"/C/Users/George/Code/Ruby/sample_app/app/views/static_pages/home.html.erb",
 		"/C/Users/George/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Users/George/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/George/Code/Ruby/sample_app/app/helpers/application_helper.rb",
-		"/C/Users/George/Code/Ruby/sample_app/spec/requests/static_pages_spec.rb",
 		"/C/Users/George/Code/Ruby/sample_app/app/views/static_pages/about.html.erb",
 		"/C/Users/George/Code/Ruby/sample_app/app/views/static_pages/help.html.erb",
-		"/C/Users/George/Code/Ruby/sample_app/config/routes.rb",
-		"/C/Users/George/Code/Ruby/sample_app/app/controllers/static_pages_controller.rb",
 		"/C/Users/George/Code/Ruby/sample_app/app/controllers/application_controller.rb",
 		"/C/Users/George/Code/Ruby/sample_app/public/index.html",
 		"/C/Users/George/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
@@ -113,28 +133,28 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/assets/stylesheets/custom.css.scss",
+					"file": "spec/models/user_spec.rb",
 					"settings":
 					{
-						"buffer_size": 1266,
+						"buffer_size": 2081,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								994,
-								994
+								2076,
+								2076
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 617.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -198,6 +218,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 163.0,
+	"side_bar_width": 136.0,
 	"status_bar_visible": true
 }
