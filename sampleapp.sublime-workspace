@@ -56,51 +56,10 @@
 	"buffers":
 	[
 		{
-			"file": "spec/requests/user_pages_spec.rb",
-			"settings":
-			{
-				"buffer_size": 4287,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/users/show.html.erb",
-			"settings":
-			{
-				"buffer_size": 460,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/microposts/_micropost.html.erb",
-			"settings":
-			{
-				"buffer_size": 167,
-				"line_ending": "Windows",
-				"name": "<li>"
-			}
-		},
-		{
-			"file": "app/controllers/users_controller.rb",
-			"settings":
-			{
-				"buffer_size": 1387,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "lib/tasks/sample_data.rake",
 			"settings":
 			{
-				"buffer_size": 808,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/assets/stylesheets/custom.css.scss",
-			"settings":
-			{
-				"buffer_size": 2879,
+				"buffer_size": 1127,
 				"line_ending": "Windows"
 			}
 		}
@@ -129,49 +88,59 @@
 	},
 	"file_history":
 	[
+		"/C/Users/George/Code/Ruby/sample_app/app/models/user.rb",
+		"/C/Users/George/Code/Ruby/sample_app/spec/models/user_spec.rb",
+		"/C/Users/George/Code/Ruby/sample_app/spec/models/relationship_spec.rb",
+		"/C/Users/George/Code/Ruby/sample_app/app/models/relationship.rb",
+		"/C/Users/George/Code/Ruby/sample_app/db/migrate/20130808222612_create_relationships.rb",
+		"/C/Users/George/Code/Ruby/sample_app/app/controllers/microposts_controller.rb",
+		"/C/Users/George/Code/Ruby/sample_app/spec/requests/micropost_pages_spec.rb",
+		"/C/Users/George/Code/Ruby/sample_app/app/views/shared/_feed_item.html.erb",
+		"/C/Users/George/Code/Ruby/sample_app/app/views/microposts/_micropost.html.erb",
+		"/C/Users/George/Code/Ruby/sample_app/app/views/static_pages/home.html.erb",
+		"/C/Users/George/Code/Ruby/sample_app/app/views/shared/_feed.html.erb",
+		"/C/Users/George/Code/Ruby/sample_app/app/controllers/static_pages_controller.rb",
+		"/C/Users/George/Code/Ruby/sample_app/spec/requests/static_pages_spec.rb",
+		"/C/Users/George/Code/Ruby/sample_app/app/views/shared/_user_info.html.erb",
+		"/C/Users/George/Code/Ruby/sample_app/app/views/users/edit.html.erb",
+		"/C/Users/George/Code/Ruby/sample_app/app/views/users/new.html.erb",
+		"/C/Users/George/Code/Ruby/sample_app/app/views/shared/_error_messages.html.erb",
+		"/C/Users/George/Code/Ruby/sample_app/app/views/shared/_micropost_form.html.erb",
+		"/C/Users/George/Code/Ruby/sample_app/app/controllers/users_controller.rb",
+		"/C/Users/George/Code/Ruby/sample_app/app/helpers/sessions_helper.rb",
+		"/C/Users/George/Code/Ruby/sample_app/spec/requests/authentication_pages_spec.rb",
+		"/C/Users/George/Code/Ruby/sample_app/config/routes.rb",
+		"/C/Users/George/Code/Ruby/sample_app/app/assets/stylesheets/custom.css.scss",
+		"/C/Users/George/Code/Ruby/sample_app/lib/tasks/sample_data.rake",
+		"/C/Users/George/Code/Ruby/sample_app/app/views/users/show.html.erb",
+		"/C/Users/George/Code/Ruby/sample_app/spec/requests/user_pages_spec.rb",
 		"/C/Users/George/Code/Ruby/sample_app/spec/models/micropost_spec.rb",
 		"/C/Users/George/Code/Ruby/sample_app/app/models/micropost.rb",
-		"/C/Users/George/Code/Ruby/sample_app/spec/models/user_spec.rb",
-		"/C/Users/George/Code/Ruby/sample_app/app/models/user.rb",
 		"/C/Users/George/Code/Ruby/sample_app/spec/factories.rb",
 		"/C/Users/George/Code/Ruby/sample_app/config/application.rb",
-		"/C/Users/George/Code/Ruby/sample_app/app/controllers/users_controller.rb",
 		"/C/Users/George/Code/Ruby/sample_app/db/migrate/20130805203027_create_microposts.rb",
-		"/C/Users/George/Code/Ruby/sample_app/spec/requests/authentication_pages_spec.rb",
 		"/C/Users/George/Code/Ruby/sample_app/app/views/users/_user.html.erb",
-		"/C/Users/George/Code/Ruby/sample_app/spec/requests/user_pages_spec.rb",
-		"/C/Users/George/Code/Ruby/sample_app/lib/tasks/sample_data.rake",
 		"/C/Users/George/Code/Ruby/sample_app/db/migrate/20130801205458_add_admin_to_users.rb",
 		"/C/Users/George/Code/Ruby/sample_app/app/views/users/index.html.erb",
 		"/C/Users/George/Code/Ruby/sample_app/Gemfile",
 		"/C/Users/George/Code/Ruby/sample_app/app/views/layouts/_header.html.erb",
-		"/C/Users/George/Code/Ruby/sample_app/app/assets/stylesheets/custom.css.scss",
 		"/C/Users/George/Code/Ruby/sample_app/app/controllers/sessions_controller.rb",
-		"/C/Users/George/Code/Ruby/sample_app/app/helpers/sessions_helper.rb",
 		"/C/Users/George/Code/Ruby/sample_app/Gemfile.lock",
 		"/C/Users/George/Code/Ruby/sample_app/spec/support/utilities.rb",
-		"/C/Users/George/Code/Ruby/sample_app/app/views/users/edit.html.erb",
-		"/C/Users/George/Code/Ruby/sample_app/app/views/shared/_error_messages.html.erb",
 		"/C/Users/George/Code/Ruby/sample_app/app/assets/javascripts/application.js",
 		"/C/Users/George/Code/Ruby/sample_app/app/assets/javascripts/static_pages.js.coffee",
 		"/C/Users/George/Code/Ruby/sample_app/app/controllers/application_controller.rb",
 		"/C/Users/George/Code/Ruby/sample_app/db/migrate/20130723223134_add_remember_token_to_users.rb",
-		"/C/Users/George/Code/Ruby/sample_app/config/routes.rb",
 		"/C/Users/George/Code/Ruby/sample_app/app/views/sessions/new.html.erb",
 		"/C/Users/George/Code/Ruby/sample_app/app/views/layouts/application.html.erb",
 		"/C/Users/George/Code/Ruby/sample_app/config/environments/production.rb",
-		"/C/Users/George/Code/Ruby/sample_app/app/views/users/new.html.erb",
-		"/C/Users/George/Code/Ruby/sample_app/spec/requests/static_pages_spec.rb",
-		"/C/Users/George/Code/Ruby/sample_app/app/views/users/show.html.erb",
 		"/C/Users/George/Code/Ruby/sample_app/app/helpers/users_helper.rb",
 		"/C/Users/George/Code/Ruby/sample_app/config/environments/test.rb",
 		"/C/Users/George/Code/Ruby/sample_app/db/development.sqlite3",
 		"/C/Users/George/Code/Ruby/sample_app/db/migrate/20130713223246_add_index_to_users_email.rb",
 		"/C/Users/George/Code/Ruby/sample_app/db/migrate/20130711211709_create_users.rb",
-		"/C/Users/George/Code/Ruby/sample_app/app/views/static_pages/home.html.erb",
 		"/C/Users/George/Code/Ruby/sample_app/app/views/layouts/_footer.html.erb",
 		"/C/Users/George/Code/Ruby/sample_app/app/views/static_pages/contact.html.erb",
-		"/C/Users/George/Code/Ruby/sample_app/app/controllers/static_pages_controller.rb",
 		"/C/Users/George/Code/Ruby/sample_app/app/assets/stylesheets/application.css",
 		"/C/Users/George/Code/Ruby/sample_app/app/views/layouts/_shim.html.erb",
 		"/C/Users/George/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
@@ -230,132 +199,23 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "spec/requests/user_pages_spec.rb",
-					"settings":
-					{
-						"buffer_size": 4287,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1766,
-								1766
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 737.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/views/users/show.html.erb",
-					"settings":
-					{
-						"buffer_size": 460,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								437,
-								437
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/views/microposts/_micropost.html.erb",
-					"settings":
-					{
-						"buffer_size": 167,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								167,
-								167
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<li>",
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/controllers/users_controller.rb",
-					"settings":
-					{
-						"buffer_size": 1387,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								341,
-								341
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 35.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "lib/tasks/sample_data.rake",
 					"settings":
 					{
-						"buffer_size": 808,
+						"buffer_size": 1127,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								720,
-								720
+								1127,
+								1127
 							]
 						],
 						"settings":
@@ -365,35 +225,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/assets/stylesheets/custom.css.scss",
-					"settings":
-					{
-						"buffer_size": 2879,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2879,
-								2879
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2671.0,
+						"translation.y": 47.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -457,6 +289,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 178.0,
+	"side_bar_width": 176.0,
 	"status_bar_visible": true
 }
